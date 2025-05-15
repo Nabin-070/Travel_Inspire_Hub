@@ -1,4 +1,4 @@
-<?php
+<?php 
 include 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -12,9 +12,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_email'] = $user['email'];
-        $_SESSION['user_name'] = $user['first_name'] . ' ' . $user['last_name'];
-
-        header('Location: index.php');
+        $_SESSION['user_name'] = $user['full_name'];
+        $_SESSION['user_role'] = $user['role']; // Store user role in session
+        
+        // Redirect based on role
+        if ($user['role'] === 'admin') {
+            header('Location: admin_dashboard.php');
+        } else {
+            header('Location: index.php');
+        }
         exit();
     } else {
         $error = "Invalid email or password";
@@ -26,114 +32,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login | Travel Inspire Hub</title>
+    <title>Login | TravelEase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+            background-color: #f8f9fa;
+            padding-top: 80px;
         }
-
-        .login-container {
-            background: #ffffff;
+        .login-card {
+            max-width: 500px;
+            margin: 0 auto;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 400px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: white;
         }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 24px;
-            color: #333;
+        .form-control:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
         }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-
-        .error {
-            color: red;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: #fff;
+        .btn-login {
+            background-color: #3498db;
             border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
+            padding: 10px;
+            font-weight: 600;
         }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        .register-link {
-            margin-top: 15px;
-            text-align: center;
-        }
-
-        .register-link a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .register-link a:hover {
-            text-decoration: underline;
+        .btn-login:hover {
+            background-color: #2c3e50;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-
-        <?php if (isset($error)): ?>
-            <div class="error"><?php echo htmlspecialchars($error); ?></div>
-        <?php endif; ?>
-
-        <form method="post">
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+    <div class="container">
+        <div class="login-card">
+            <h2 class="text-center mb-4">Login to TravelEase</h2>
+            
+            <?php if (isset($error)): ?>
+                <div class="alert alert-danger"><?php echo htmlspecialchars($error); ?></div>
+            <?php endif; ?>
+            
+            <form method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-login">Login</button>
+                </div>
+            </form>
+            
+            <div class="mt-3 text-center">
+                <p>Don't have an account? <a href="register.php">Register here</a></p>
+                <p><a href="forgot_password.php">Forgot password?</a></p>
             </div>
-
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-
-            <button type="submit">Login</button>
-        </form>
-
-        <div class="register-link">
-            <p>Don't have an account? <a href="register.php">Register here</a></p>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -24,11 +24,11 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero-bg.jpg');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 250px 0;
+            padding: 300px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -332,7 +332,7 @@
             
         </div>
         
-<img src="plane-removebg-preview.png" alt="Flying Plane" class="plane-animation">
+<img src="./images/plane-removebg-preview.png" alt="Flying Plane" class="plane-animation">
     </section>
 
     <!-- About Section -->
@@ -342,7 +342,7 @@
             <h2 class="text-center section-title">About Us</h2>
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="about-us.jpg" alt="About TravelEase" class="img-fluid about-img">
+                    <img src="./images/about-us.jpg" alt="About TravelEase" class="img-fluid about-img">
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-3">Our Story</h3>
@@ -518,35 +518,35 @@
             <h2 class="text-center section-title">Gallery</h2>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="paris.jpg" alt="Paris" class="img-fluid gallery-img">
+                    <img src="./images/paris.jpg" alt="Paris" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Paris, France</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="bali.jpg" alt="Bali" class="img-fluid gallery-img">
+                    <img src="./images/bali.jpg" alt="Bali" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Bali, Indonesia</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="Tokyo.jpg" alt="Tokyo" class="img-fluid gallery-img">
+                    <img src="./images/Tokyo.jpg" alt="Tokyo" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Tokyo, Japan</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="New-York.jpg" alt="New York" class="img-fluid gallery-img">
+                    <img src="./images/New-York.jpg" alt="New York" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">New York, USA</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="Italy.jpeg" alt="Rome" class="img-fluid gallery-img">
+                    <img src="./images/Italy.jpeg" alt="Rome" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Rome, Italy</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="canada.jpg" alt="Cape Town" class="img-fluid gallery-img">
+                    <img src="./images/canada.jpg" alt="Cape Town" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Ottawa, Ottawa</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="australia.jpg" alt="Sydney" class="img-fluid gallery-img">
+                    <img src="./images/australia.jpg" alt="Sydney" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Sydney, Australia</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="Rio.jpg" alt="Rio" class="img-fluid gallery-img">
+                    <img src="./images/Rio.jpg" alt="Rio" class="img-fluid gallery-img">
                     <h5 class="text-center mt-2">Rio de Janeiro, Brazil</h5>
                 </div>
             </div>
@@ -563,7 +563,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-card">
-                        <img src="expert1.jpg" alt="Sarah Johnson" class="img-fluid team-img">
+                        <img src="./images/expert1.jpg" alt="Sarah Johnson" class="img-fluid team-img">
                         <h4>Sarah Johnson</h4>
                         <p class="text-muted">European Specialist</p>
                         <div class="social-links">
@@ -575,7 +575,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-card">
-                        <img src="expert2.jpg" alt="Michael Chen" class="img-fluid team-img">
+                        <img src="./images/expert2.jpg" alt="Michael Chen" class="img-fluid team-img">
                         <h4>Michael Chen</h4>
                         <p class="text-muted">Asian Adventures</p>
                         <div class="social-links">
@@ -587,7 +587,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-card">
-                        <img src="expert3.jpg" alt="Elena Rodriguez" class="img-fluid team-img">
+                        <img src="./images/expert3.jpg" alt="Elena Rodriguez" class="img-fluid team-img">
                         <h4>Elena Rodriguez</h4>
                         <p class="text-muted">Luxury Travel</p>
                         <div class="social-links">
@@ -599,7 +599,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-card">
-                        <img src="expert4.jpg" alt="David Wilson" class="img-fluid team-img">
+                        <img src="./images/expert4.jpg" alt="David Wilson" class="img-fluid team-img">
                         <h4>David Wilson</h4>
                         <p class="text-muted">Adventure Tours</p>
                         <div class="social-links">
@@ -629,7 +629,7 @@
                         </div>
                         <p class="mb-4">"Travel Inspire Hub planned our honeymoon to perfection. Every detail was taken care of, and we had the most magical time in Bali. Their recommendations were spot on!"</p>
                         <div class="d-flex align-items-center">
-                            <img src="client1.jpg" alt="Client" class="rounded-circle me-3" width="50">
+                            <img src="./images/client1.jpg" alt="Client" class="rounded-circle me-3" width="50">
                             <div>
                                 <h6 class="mb-0">Sarah & James K.</h6>
                                 <small class="text-muted">Honeymoon in Bali</small>
@@ -648,7 +648,7 @@
                         </div>
                         <p class="mb-4">"The customized European tour was beyond our expectations. The hotels were excellent, and the private guides made each city come alive. Will definitely use them again!"</p>
                         <div class="d-flex align-items-center">
-                            <img src="client2.jpg" alt="Client" class="rounded-circle me-3" width="50">
+                            <img src="./images/client2.jpg" alt="Client" class="rounded-circle me-3" width="50">
                             <div>
                                 <h6 class="mb-0">Robert M.</h6>
                                 <small class="text-muted">European Grand Tour</small>
@@ -667,7 +667,7 @@
                         </div>
                         <p class="mb-4">"As a solo female traveler, I felt completely safe and well taken care of during my Japan trip. The itinerary balanced must-see sights with hidden gems perfectly."</p>
                         <div class="d-flex align-items-center">
-                            <img src="client3.jpg" alt="Client" class="rounded-circle me-3" width="50">
+                            <img src="./images/client3.jpg" alt="Client" class="rounded-circle me-3" width="50">
                             <div>
                                 <h6 class="mb-0">Anika P.</h6>
                                 <small class="text-muted">Japan Adventure</small>
@@ -729,35 +729,41 @@
                 </div>
                 
                 <div class="col-lg-6">
-                    <div class="contact-card">
-                        <h4 class="mb-4">Send Us a Message</h4>
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Phone Number">
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" required>
-                                    <option value="" disabled selected>Select Service</option>
-                                    <option>Flight Booking</option>
-                                    <option>Hotel Reservation</option>
-                                    <option>Custom Tour</option>
-                                    <option>Visa Assistance</option>
-                                    <option>Other Inquiry</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                        </form>
-                    </div>
-                </div>
+    <div class="contact-card">
+        <h4 class="mb-4">Send Us a Message</h4>
+        <form method="POST" action="submit_message.php">
+            <div class="mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="mb-3">
+                <select name="service" class="form-select" required>
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="Flight Booking">Flight Booking</option>
+                    <option value="Hotel Reservation">Hotel Reservation</option>
+                    <option value="Custom Tour">Custom Tour</option>
+                    <option value="Visa Assistance">Visa Assistance</option>
+                    <option value="Other Inquiry">Other Inquiry</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
             </div>
         </div>
     </section>
